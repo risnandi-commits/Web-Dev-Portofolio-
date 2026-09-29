@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#f4f1ea" />
+<title>Rifqi — Web Developer & Frontend</title>
+<meta name="description" content="Portofolio — Frontend, MySQL Database, dan Web Development." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- background gelembung -->
+<div class="bubbles-bg" id="bubblesBg" aria-hidden="true"></div>
+  
+<!-- progress bar -->
+<div class="progress" id="progress"></div>
+
+<!-- nav dots -->
+<nav class="dots" aria-label="Navigasi slide">
+  <button class="dot active" data-target="hero"     aria-label="Beranda"><span>Beranda</span></button>
+  <button class="dot"        data-target="tentang"  aria-label="Tentang"><span>Tentang</span></button>
+  <button class="dot"        data-target="layanan"  aria-label="Layanan"><span>Layanan</span></button>
+  <button class="dot"        data-target="alur"     aria-label="Alur Kerja"><span>Alur</span></button>
+  <button class="dot"        data-target="kontak"   aria-label="Kontak"><span>Kontak</span></button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="brand reveal">
+    <span class="brand-dot"></span>
+    <span>rifqi.dev</span>
+  </div>
+
+  <div class="eyebrow reveal" style="--d:.05s">
+    <span class="pulse"></span> Available for freelance
+  </div>
+
+  <h1 class="reveal" style="--d:.1s">
+    Bikin web yang <em>enak</em><br />
+    dilihat & dipakai.
+  </h1>
+
+  <p class="lead reveal" style="--d:.2s">
+    Saya membantu brand & bisnis kecil punya website yang rapi —
+    dari tampilan depan sampai database di belakang.
+  </p>
+
+  <div class="hero-actions reveal" style="--d:.3s">
+    <a href="#layanan" class="btn btn-primary">
+      Lihat Layanan
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+    </a>
+    <a href="#kontak" class="btn btn-ghost">Ngobrol Dulu</a>
+  </div>
+
+  <div class="scroll-hint reveal" style="--d:.5s">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Frontend Development</span><i>✦</i>
+    <span>MySQL Database</span><i>✦</i>
+    <span>Web Development</span><i>✦</i>
+    <span>UI yang Bersih</span><i>✦</i>
+    <span>Responsif</span><i>✦</i>
+    <span>Frontend Development</span><i>✦</i>
+    <span>MySQL Database</span><i>✦</i>
+    <span>Web Development</span><i>✦</i>
+    <span>UI yang Bersih</span><i>✦</i>
+    <span>Responsif</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ============ TENTANG ============ -->
+<section id="tentang">
+  <div class="section-head">
+    <span class="eyebrow reveal"><span class="num">01</span> Tentang</span>
+    <h2 class="reveal" style="--d:.05s">
+      Santai orangnya, <em>serius</em> hasilnya.
+    </h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal" style="--d:.1s">
+      <p>
+        Saya developer yang suka bikin sesuatu yang <strong>simpel tapi berkesan</strong>.
+        Mulai dari landing page, dashboard, sampai sistem yang butuh database di dalamnya.
+      </p>
+      <p>
+        Cara kerja saya sederhana: ngobrol dulu, pahami kebutuhannya, baru ngoding.
+        Nggak ribet, nggak bikin pusing — dan pastinya komunikatif sepanjang proses.
+      </p>
+    </div>
+
+    <div class="about-side reveal" style="--d:.2s">
+      <div class="stat">
+        <strong>3+</strong>
+        <span>Tahun belajar & praktik</span>
+      </div>
+      <div class="stat">
+        <strong>20+</strong>
+        <span>Project dikerjakan</span>
+      </div>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Komit & tepat waktu</span>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- ============ LAYANAN ============ -->
+<section id="layanan">
+  <div class="section-head">
+    <span class="eyebrow reveal"><span class="num">02</span> Layanan</span>
+    <h2 class="reveal" style="--d:.05s">
+      Tiga hal yang bisa <em>saya bantu</em>.
+    </h2>
+    <p class="section-sub reveal" style="--d:.1s">
+      Bisa salah satu, bisa juga ketiganya sekaligus jadi satu website utuh.
+    </p>
+  </div>
+
+  <div class="services-grid">
+
+    <!-- CARD 1 -->
+    <article class="card reveal" style="--d:.1s"
+      data-bubble-emoji="🎨"
+      data-bubble-title="Frontend Development"
+      data-bubble-text="Bikin tampilan yang enak dilihat & dipakai. Fokus ke detail kecil, kecepatan, dan pengalaman pengguna di semua device."
+      data-bubble-tags="HTML,CSS,JS,Responsif">
+      <div class="card-icon icon-sage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2.5" y="4" width="19" height="14" rx="2.5"/>
+          <path d="M2.5 8.5h19"/>
+          <path d="M8 21h8"/>
+        </svg>
+      </div>
+      <h3>Frontend Development</h3>
+      <p>Antarmuka yang bersih, <span class="bubble-trigger"
+          data-bubble-emoji="📱"
+          data-bubble-title="Responsif"
+          data-bubble-text="Tampilan otomatis menyesuaikan ukuran layar — dari HP kecil sampai monitor lebar, tanpa layout yang rusak."
+          data-bubble-tags="Mobile,Tablet,Desktop">responsif</span>, dan nyaman dipakai di semua ukuran layar.</p>
+      <ul class="tags">
+        <li class="bubble-trigger"
+            data-bubble-emoji="📐"
+            data-bubble-title="HTML"
+            data-bubble-text="Struktur dasar halaman web. Ditulis semantik biar mudah dibaca browser & mesin pencari."
+            data-bubble-tags="Markup,SEO,Semantic">HTML</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="🎨"
+            data-bubble-title="CSS"
+            data-bubble-text="Ngatur tampilan: warna, jarak, animasi. Bikin web terasa hidup dan konsisten."
+            data-bubble-tags="Style,Animation,Layout">CSS</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="⚡"
+            data-bubble-title="JavaScript"
+            data-bubble-text="Bikin web jadi interaktif — dari tombol yang bereaksi sampai animasi halus."
+            data-bubble-tags="Interaktif,Dinamis,Logic">JavaScript</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="⚛️"
+            data-bubble-title="React"
+            data-bubble-text="Library populer buat bikin UI kompleks jadi rapi & gampang dirawat."
+            data-bubble-tags="Component,SPA,Modern">React</li>
+      </ul>
+    </article>
+
+    <!-- CARD 2 -->
+    <article class="card reveal" style="--d:.2s"
+      data-bubble-emoji="🗄️"
+      data-bubble-title="MySQL Database"
+      data-bubble-text="Rancang & kelola data biar rapi, aman, dan cepat diakses. Cocok buat aplikasi yang butuh simpan banyak data."
+      data-bubble-tags="Relasional,Query,Backup">
+      <div class="card-icon icon-tan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="12" cy="5.5" rx="8" ry="3"/>
+          <path d="M4 5.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+          <path d="M4 11.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+        </svg>
+      </div>
+      <h3>MySQL Database</h3>
+      <p>Perancangan struktur database yang rapi, <span class="bubble-trigger"
+          data-bubble-emoji="🔗"
+          data-bubble-title="Relasi Antar Tabel"
+          data-bubble-text="Data tidak berdiri sendiri — dihubungkan biar konsisten & tidak duplikat. Contoh: user ⟷ pesanan."
+          data-bubble-tags="One-to-Many,Foreign Key">relasi antar tabel</span> yang efisien, dan query yang cepat.</p>
+      <ul class="tags">
+        <li class="bubble-trigger"
+            data-bubble-emoji="🗃️"
+            data-bubble-title="MySQL"
+            data-bubble-text="Database open-source paling populer. Andal, cepat, dan didukung di mana-mana."
+            data-bubble-tags="RDBMS,Open Source">MySQL</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="🔗"
+            data-bubble-title="Relasi"
+            data-bubble-text="Hubungan antar tabel — biar data tidak berdiri sendiri & mudah di-query."
+            data-bubble-tags="Join,Foreign Key">Relasi</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="⚡"
+            data-bubble-title="Query"
+            data-bubble-text="Perintah ambil / olah data dari database — ditulis efisien biar cepat walau data banyak."
+            data-bubble-tags="SELECT,WHERE,Index">Query</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="🚀"
+            data-bubble-title="Optimasi"
+            data-bubble-text="Bikin query & struktur data makin cepat. Web responsif walau data ribuan baris."
+            data-bubble-tags="Index,Cache,Performance">Optimasi</li>
+      </ul>
+    </article>
+
+    <!-- CARD 3 -->
+    <article class="card reveal" style="--d:.3s"
+      data-bubble-emoji="🧩"
+      data-bubble-title="Web Development"
+      data-bubble-text="Bangun website dari nol sampai online — coding, testing, deploy. Termasuk perawatan berkala."
+      data-bubble-tags="Fullstack,Deploy,Maintenance">
+      <div class="card-icon icon-clay">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8.5 8.5 5 12l3.5 3.5"/>
+          <path d="M15.5 8.5 19 12l-3.5 3.5"/>
+          <path d="M13.5 5.5 10.5 18.5"/>
+        </svg>
+      </div>
+      <h3>Web Development</h3>
+      <p>Bangun website dari nol sampai <span class="bubble-trigger"
+          data-bubble-emoji="🌐"
+          data-bubble-title="Online"
+          data-bubble-text="Bukan cuma bikin, tapi juga bantu deploy ke hosting biar bisa diakses siapa aja."
+          data-bubble-tags="Hosting,Domain,SSL">online</span> — dari desain, coding, sampai deploy.</p>
+      <ul class="tags">
+        <li class="bubble-trigger"
+            data-bubble-emoji="🧠"
+            data-bubble-title="Fullstack"
+            data-bubble-text="Gabungan frontend + backend + database. Satu orang, satu tanggung jawab, satu hasil."
+            data-bubble-tags="Frontend,Backend">Fullstack</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="🚀"
+            data-bubble-title="Deploy"
+            data-bubble-text="Upload & konfigurasi website ke server biar bisa diakses publik — cepat & aman."
+            data-bubble-tags="Hosting,Domain,SSL">Deploy</li>
+        <li class="bubble-trigger"
+            data-bubble-emoji="🔧"
+            data-bubble-title="Maintenance"
+            data-bubble-text="Update, backup, dan perbaikan setelah website live. Biar tetap aman & lancar."
+            data-bubble-tags="Backup,Update,Support">Maintenance</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ ALUR ============ -->
+<section id="alur">
+  <div class="section-head">
+    <span class="eyebrow reveal"><span class="num">03</span> Alur Kerja</span>
+    <h2 class="reveal" style="--d:.05s">
+      Simpel, <em>nggak bertele-tele</em>.
+    </h2>
+  </div>
+
+  <ol class="steps">
+    <li class="reveal" style="--d:.05s">
+      <span class="step-num">01</span>
+      <div>
+        <h4>Diskusi</h4>
+        <p>Cerita kebutuhan, tujuan, dan referensi yang kamu suka. Gratis, santai, tanpa komitmen.</p>
+      </div>
+    </li>
+    <li class="reveal" style="--d:.15s">
+      <span class="step-num">02</span>
+      <div>
+        <h4>Rancang</h4>
+        <p>Susun struktur, alur, dan tampilan. Kamu lihat dulu sebelum masuk tahap coding.</p>
+      </div>
+    </li>
+    <li class="reveal" style="--d:.25s">
+      <span class="step-num">03</span>
+      <div>
+        <h4>Bangun</h4>
+        <p>Proses coding dengan update berkala. Kamu bisa pantau progres kapan saja.</p>
+      </div>
+    </li>
+    <li class="reveal" style="--d:.35s">
+      <span class="step-num">04</span>
+      <div>
+        <h4>Rilis</h4>
+        <p>Deploy ke hosting, testing akhir, plus pendampingan kalau ada yang perlu disesuaikan.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ KONTAK ============ -->
+<section id="kontak" class="contact">
+  <span class="eyebrow reveal"><span class="num">04</span> Kontak</span>
+  <h2 class="reveal" style="--d:.05s">
+    Punya ide? <em>Ayo ngobrol.</em>
+  </h2>
+  <p class="lead reveal" style="--d:.1s">
+    Ceritakan sedikit tentang project kamu. Saya balas secepatnya —
+    biasanya dalam beberapa jam.
+  </p>
+
+  <div class="contact-actions reveal" style="--d:.2s">
+    <a href="mailto:hello@rifqi.dev" class="btn btn-primary">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+      hello@rifqi.dev
+    </a>
+    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+  </div>
+
+  <div class="socials reveal" style="--d:.3s">
+    <a href="#" target="_blank" rel="noopener">Instagram</a>
+    <span>·</span>
+    <a href="#" target="_blank" rel="noopener">GitHub</a>
+    <span>·</span>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Rifqi — dibikin dengan tenang di Indonesia.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
